@@ -1,0 +1,639 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Titillium Web', sans-serif;
+}
+/* ----- General properties------*/
+*::selection
+{
+    background: #87509c;
+}
+/*------Section A --------*/
+.heroSection
+{
+    padding-top: 55px;
+    padding-bottom: 154px;
+    width: 100%;
+    height: auto;
+    background-color: #87509c;
+    box-sizing: border-box
+}
+.heroSection .container
+{
+    width: 1100px;
+    height: auto;
+    margin: 0 auto;
+    background-color: #87509c
+}
+.heroSection .container nav
+{
+    width: 100%;
+    height: auto;
+}
+.heroSection .container nav .menuBar
+{
+    float: right
+}
+.heroSection .container nav .menuBar ul
+{
+    list-style-type: none;
+/*    text-align: center*/
+}
+.heroSection .container nav .menuBar ul li
+{
+    margin: 0px 20px;
+    display: inline-block;
+/*    text-align: center*/
+}.heroSection .container nav .menuBar ul li:last-child
+{
+    margin-right: 70px;
+}
+.heroSection .container nav .menuBar ul li a
+{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    transition: 0.1s
+}
+.menuBar ul li a:hover,
+.menuBar ul li a.active
+{
+    border-bottom: 2px solid #fff;
+    transition: 0.1s
+}
+.heroSection .container nav .logo
+{
+    margin-left: 40px;
+    float: left
+}
+.clear
+{
+    clear: both
+}
+.heroSection .container section .desc
+{
+    padding-top: 140px;
+    color: #fff;
+    width: 100%;
+    height: auto;
+    font-size: 42px;
+    text-align: center;
+}
+.heroSection .container section .desc p
+{
+    margin-top: 0;
+    margin-bottom: 0px;
+}
+.heroSection .container section .linkDesc
+{
+    text-align: center;
+    margin-top: 62px;
+}
+.heroSection .container section .linkDesc a
+{
+    display: inline-block;
+    text-decoration: none;
+    background: #eb7d4b;
+    width: 295px;
+    height: 68px;
+    cursor: pointer;
+    line-height: 68px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    border-bottom: 5px solid #c86a40;
+}
+.heroSection .container section .linkDesc a:hover
+{
+    background: #fe9f6e;
+}
+/*------Section B -----------*/
+.serviceSection
+{
+    padding-top: 120px;
+    padding-bottom: 125px;
+    width: 100%;
+    height: auto;
+    min-height: 600px;
+    background-color: #17c2a4;
+    box-sizing: border-box
+}
+.serviceSection .container
+{
+    margin: 0 auto;
+    width: 1100px;
+    height: auto;
+    background-color: #17c2a4;
+}
+.serviceSection .desc
+{
+    text-align: center;
+}
+.serviceSection .desc h2
+{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 40px;
+    color: #fff;
+    letter-spacing: 2px;
+}
+.serviceSection .desc p
+{
+    margin-top: 50px;
+    margin-bottom: 0px;
+    font-size: 18px;
+    color: #fff;
+}
+/*------ grid display -----*/
+.serviceSection .serviceBox
+{
+    margin: 0px auto;
+    padding-top: 65px;
+    width: 1100px;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    text-align: center;
+}
+.serviceSection .serviceBox .subServiceBox
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(160px, auto) 
+                        minmax(80px, auto) 
+                        minmax(110px, auto);
+    justify-items: center;
+    width: 100%;
+    height: auto;
+    color: #fff;
+}
+.serviceSection .serviceBox .subServiceBox h3
+{
+    font-size: 24px;
+}
+.serviceSection .serviceBox .subServiceBox p
+{
+    padding: 0 40px 0 40px;
+    font-size: 16px;
+}
+/* ------ Section C -------*/
+.teamInfo
+{
+    padding-top: 120px;
+    padding-bottom: 120px;
+    width: 100%;
+    height: auto;
+    background-color: #e7f1f8;
+    box-sizing: border-box
+}
+.teamInfo .container
+{
+    margin: 0 auto;
+    width: 1100px;
+    height: auto;
+    background-color: #e7f1f8
+}
+.teamInfo .container .descText
+{
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+.teamInfo .container .descText h3
+{
+    margin: 0px;
+    color: #3c4761;
+    font-size: 41.3px;
+    letter-spacing: 2px;
+}
+.teamInfo .container .descText p
+{
+    margin-top: 50px;
+    margin-bottom: 80px;
+    color: #c3cdd7;
+    font-size: 18.6px;
+}
+.teamInfo .container .teamDsc
+{
+    width: 1100px;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+.teamInfo .container .teamDsc .subTeam
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5,minmax(25px,auto));
+}
+.teamInfo .container .teamDsc span
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 1fr;
+    justify-self: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0 5px 15px #555;
+    background-color: #878787;
+}
+.teamInfo .container .teamDsc span img
+{
+    display: inline-block;
+    justify-self: stretch;
+    align-self: center;
+    width: 201px;
+    height: 201px;
+    border-radius: 50%;
+/*    transform: scale(1.2);*/
+    margin: 0 auto
+}
+.teamInfo .container .teamDsc .subTeam h3
+{
+    font-size: 24px;
+    color: #27283d;
+    margin-bottom: 0;
+}
+.teamInfo .container .teamDsc h4
+{
+    margin-bottom: 0;
+    margin-top: 15px;
+    font-size: 16px;
+    color: #30bae7
+}
+.teamInfo .container .teamDsc p
+{
+    margin-top: 30px;
+    font-size: 16px;
+    color: #3c4761
+}
+.teamInfo .container .teamDsc .subTeam div
+{
+    height: auto;
+    text-align: center;
+}
+.teamInfo .container .teamDsc .subTeam div a
+{
+    display: inline-block;
+    margin: 0 8px;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #bdd1df;
+    color: #fff;
+    border-radius: 50%;
+    line-height: 35px;
+    text-decoration: none;
+    font-size: 20px;
+}
+.teamInfo .container .teamDsc .subTeam div a.fb:hover
+{
+    color: #3b5999
+}
+.teamInfo .container .teamDsc .subTeam div a.tw:hover
+{
+    color: #55acee
+}
+.teamInfo .container .teamDsc .subTeam div a.in:hover
+{
+    color: #0077B5
+}
+.teamInfo .container .teamDsc .subTeam div a.en:hover
+{
+    color: #dd4b39
+}
+/*---- Section D -----*/
+.portfolioSection
+{
+    padding-top: 115px;
+    padding-bottom: 110px;
+    width: 100%;
+    height: auto;
+    background-color: #ffdd99;
+    
+}
+.portfolioSection .container
+{
+    margin: 0 auto;
+    width: 1100px;
+    height: auto;
+    background-color: #ffdd99;
+}
+.portfolioSection .container .descSection
+{
+    margin: 0 auto;
+    text-align: center;
+    width: 540px;
+    height: auto;
+}
+.portfolioSection .container .descSection h2
+{
+    font-size: 40px;
+    color: #393939;
+    letter-spacing: 2px;
+    font-weight: 800
+}
+.portfolioSection .container .descSection p
+{
+    font-size: 18px;
+    color: #393939;
+    font-weight: 600
+}
+.portfolioSection .container .gridDesc
+{
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: repeat(2, minmax(100px; auto));
+    grid-gap: 20px;
+    font-size: 18px;
+    color: #393939;
+    font-weight: 1000
+}
+.portfolioSection .container .gridDesc .imgBox
+{
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+.portfolioSection .container .loadLink
+{
+    text-align: center;
+    margin-top: 115px
+}
+.portfolioSection .container .loadLink a
+{
+    display: inline-block;
+    background-color: #17c2a4;
+    border-bottom: 5px solid #14a58c;
+    border-radius: 5px;
+    width: 292px;
+    height: 65px;
+    cursor: pointer;
+    line-height: 65px;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px auto;
+    font-weight: 200;
+}
+/*---- Section E -----*/
+.aboutUsSection
+{
+    padding-top: 118px;
+    padding-bottom: 128px;
+    width: 100%;
+    height: auto;
+    background-color: #d74680;
+    box-sizing: border-box;
+}
+.aboutUsSection .container
+{
+    margin: 0 auto;
+    width: 1100px;
+    height: auto;
+    box-sizing: border-box
+}
+.aboutUsSection .container .upSection .desc
+{
+    margin: 0 auto;
+    text-align: center;
+}
+.aboutUsSection .container .upSection .desc h2
+{
+    font-size: 40px;
+    margin-top: 0px;
+    color: #fff;
+}
+.aboutUsSection .container .upSection .desc p
+{
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 65px;
+}
+.aboutUsSection .container .downSection
+{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 110px;
+    grid-row-gap: 130px;
+}
+.aboutUsSection .container .downSection .subDownSection
+{
+    display: grid;
+    grid-template-columns: repeat(2,minmax(100px, auto));
+    grid-auto-rows: 1fr;
+    grid-column-gap: 40px;
+    padding-top: 5px;
+}
+.aboutUsSection .container .downSection .subDownSection .LeftSpan
+{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #787878
+}
+.aboutUsSection .container .downSection .subDownSection .rightSpan
+{
+    display: grid;
+    grid-template-columns: minmax(100px;100%);
+    grid-template: repeat(3,minmax(25px,auto));
+    color: #fff;
+    padding-left: 5px;
+    text-align: left
+}
+.aboutUsSection .container .downSection .subDownSection .rightSpan p
+{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 21px;
+    font-style: italic;
+}
+.aboutUsSection .container .downSection .subDownSection .rightSpan h3
+{
+    margin-top: 30px;
+    margin-bottom: 0px;
+    font-size: 24;
+    font-weight: bold;
+}
+.aboutUsSection .container .downSection .subDownSection .rightSpan h4
+{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #fac996;
+    font-size: 18;
+    font-weight: normal;
+}
+/*---- section F -------*/
+.contactSection
+{
+    padding-top: 118px;
+    padding-bottom: 118px;
+    width: 100%;
+    height: auto;
+    background-color: #3c5499;
+    box-sizing: border-box;
+}
+.contactSection .container
+{
+    margin: 0 auto;
+    width: 1100px;
+    height: auto;
+    box-sizing: border-box
+}
+.contactSection .container .addressSection .desc
+{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color: #fff
+}
+.contactSection .container .addressSection .desc h2
+{
+    font-size: 40px;
+    font-weight: bold;
+}
+.contactSection .container .addressSection .desc h3
+{
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 75px;
+}
+.formSection
+{
+    text-align: center;
+}
+.formContact
+{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: repeat(4, minmax(30px,auto));
+    grid-column-gap: 35px;
+    grid-row-gap: 27px;
+    width: 860px;
+}
+.formContact textarea
+{
+/*
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 200px;
+    max-height: 200px;
+*/
+    resize: none;
+    grid-column: 1/5;
+    padding: 22px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #fff;
+    background: #273a71;
+    outline: none;
+    box-sizing: border-box
+}
+.formContact textarea::placeholder
+{
+    color: #fff
+}
+.formContact input[type=text]
+{
+    grid-column: 1/3;
+    padding: 22px;
+    border: none;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 5px;
+    background: #273a71;
+    outline: none;
+    box-sizing: border-box
+}
+.formContact input[type=text]::placeholder
+{
+    color: #fff
+}
+.formContact input[type=mail]
+{
+    grid-column: 3/5;
+    padding: 22px;
+    border: none;
+    border-radius: 5px;
+    background: #273a71;
+    font-size: 18px;
+    color: #fff;
+    outline: none;
+    box-sizing: border-box
+}
+.formContact input[type=mail]::placeholder
+{
+    color: #fff
+}
+.formContact input[type=submit]
+{
+    grid-column: 2/4;
+    margin-top: 33px;
+    width: 295px;
+    height: 68px;
+    padding: 22px;
+    border: none;
+    border-bottom: 5px solid #299ec5;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #fff;
+    background: #30bae7;
+    cursor: pointer;
+    outline: none;
+    justify-items: center;
+    justify-self: center;
+    box-sizing: border-box
+}
+.socialSection
+{
+    width: 100%;
+    height: auto;
+    background: #344b8e
+}
+.socialSection .soicalLinks
+{
+    padding-top: 45px;
+    margin: 0 auto;
+    width: 1100px;
+    height: 110px;
+    background: #344b8e
+}
+.socialSection .soicalLinks a
+{
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    margin: 0 25px 0 25px
+}
+.socialSection .soicalLinks a:first-child
+{
+    margin-left: 100px
+}
+.socialSection .soicalLinks a:hover
+{
+    color: #30bae7
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
