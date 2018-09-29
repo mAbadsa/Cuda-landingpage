@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <title>Login form</title>
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/loginLink.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+        <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP" rel="stylesheet">
+	</head>
+	<body>
+        <div id="page">
+        </div>
+        <div class="clear"></div>
+            <button class="showForm"><i class="fas fa-user"></i></button>
+
+            <div class="continer">
+                <form class="loginForm">
+                    <h1>Log in</h1>
+                    <div class="inputBox">
+                        <input type="text" placeholder="Tenancy name" name="tenancy" equired/>
+                        <input type="text" placeholder="Enter name or Email" name="username" equired/>
+                        <input type="password" placeholder="Password" name="userpass" required/>
+                        <div class="clear"></div>
+                    </div>
+                    <div id="loginBox">
+                        <div class="loginBtn">
+                            <input type="submit" class="submitBtn" value="LOG IN"/>
+                            <input type="checkbox" name="remember" id="lbl"/>
+                            <label class="lbl1" for="lbl">Remember me</label>
+                        </div>
+                        <div class="forget">
+                            <a href="#" value="Forget">Forget&nbsp;password?</a>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <span>Login with:</span>
+                    <div class="icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                    </div>
+                    <div class="clear"></div>
+
+                </form>
+                <div class="footer">
+                    <a href="#">CREATE ACCOUNT</a>&nbsp;&nbsp;|&nbsp;
+                    <a href="#">EMAIL ACTIVATION</a>
+                </div>
+            </div>
+            <script src="assets/jQuery/jquery-1.12.4.min.js"></script>
+            <script src="assets/js/mainJs.js"></script>
+	</body>
+</html>
